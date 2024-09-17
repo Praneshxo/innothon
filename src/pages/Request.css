@@ -1,0 +1,31 @@
+.list{
+    display: flex;
+    gap: 5px;
+}
+.Payroll, .Leave, .Shift-change, .Policy {
+    width: 10%; /* Adjust the width as needed */
+    background-color: rgb(165, 222, 255);
+    padding: 7px;
+    text-align: center;
+    border-radius: 20px;
+}
+.AR{
+    display: flex;
+    gap: 5px;
+    justify-content: flex-end;
+}
+.approve,.rej{
+    width: 10%; /* Adjust the width as needed */
+    background-color: rgb(237, 248, 255);
+    padding: 7px;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: flex-end;
+    border: solid 1px;
+    border-color: rgb(218, 218, 218);
+}
+.form{
+    position: relative;
+    margin-top: 20px;
+}
+

@@ -1,18 +1,73 @@
-/* src/App.css */
-.app {
+/* App layout container */
+.app-container {
   display: flex;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
 }
 
+.sidebar {
+  width: 60px;
+  background-color: #f4f4f9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh; /* Sidebar takes full height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+/* Main content area next to sidebar */
 .main-content {
+  margin-left: 60px; /* Push content after sidebar */
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  margin-left: 250px; /* Sidebar width */
+  height: 100vh;
+  overflow-y: auto; /* Enable scrolling for content */
 }
 
+/* Fixed Header */
+.header {
+  height: 60px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 60px; /* Align with sidebar */
+  width: calc(100% - 60px); /* Take full width except sidebar */
+  z-index: 1000; /* Ensure header is above content */
+}
+
+/* Page content starts below the header */
 .page-content {
+  margin-top: 60px; /* Push content after fixed header */
   padding: 20px;
-  background-color: #f5f7fa;
-  height: calc(100vh - 80px); /* Adjust for header height */
+  background-color: #f9f9f9;
+  height: calc(100vh - 60px); /* Fill remaining space below header */
   overflow-y: auto;
+}
+
+.sidebar a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  color: #333;
+  text-decoration: none;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.sidebar a:hover {
+  background-color: #ddd;
+}
+
+.sidebar a.active {
+  color: #007bff;
+  background-color: #e7f1ff;
 }

@@ -4,9 +4,9 @@
     top: 0;
     left: 250px; /* Sidebar width */
     right: 0;
-    height: 80px;
-    background-color: #fff;
-    border-bottom: 1px solid #e0e0e0;
+    height: 120px;
+    background-color: #ffffff;
+    border-bottom: 3px solid #e0e0e0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,21 +19,32 @@
     justify-content: space-between;
     width: 100%;
   }
-  
-  .user-info {
-    display: flex;
-    align-items: center;
+  .GM{
+    position: absolute;
+    font-size: 16px;
+    margin-top: 40px;
+  }
+
+  .MP{
+    position: absolute;
+    font-size: 14px;
+    margin-top: 56px;
   }
   
+  
   .user-avatar {
+    position: absolute;
     border-radius: 50%;
     width: 50px;
     height: 50px;
     margin-right: 10px;
+    margin-top: -3px;
   }
   
   .header-date {
-    font-size: 16px;
+    font-size: 12px;
     color: #888;
+    margin-top: 47px;
+    margin-right: 23px;
   }
   

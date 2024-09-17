@@ -14,10 +14,10 @@ const Header = () => {
     <header className="header">
       <div className="header-content">
         <div className="user-info">
-          <img src="user-avatar-placeholder.png" alt="User" className="user-avatar" />
-          <div>
-            <p>Good Morning!</p>
-            <h2>Ms. Mythili Soundhararajan</h2>
+        <img src="nokia.webp" alt="User" className="user-avatar" />
+          <div className='cn'>
+            <h2 className='GM'>Good Morning!</h2>
+            <p className='MP'>Ms. Mythili Soundhararajan</p>
           </div>
         </div>
         <div className="header-date">

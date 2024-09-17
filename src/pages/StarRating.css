@@ -1,0 +1,76 @@
+.star-rating {
+    text-align: start;
+}
+
+.stars {
+    font-size: 2rem; /* Size of the stars */
+    color: #d3d3d3; /* Default color for unselected stars */
+}
+
+.star.filled {
+    color: #ffd700; /* Color for selected stars */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.star {
+    margin: 0 5px; /* Space between stars */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.star:hover {
+    color: #ffa500; /* Color when hovering over a star */
+}
+
+.review-container {
+    margin-top: 20px; /* Space above the review container */
+    padding: 10px;
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 5px;
+}
+
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid with min width of 200px */
+    gap: 15px; /* Space between review boxes */
+}
+
+.review-box {
+    display: flex;
+    color: rgb(113, 163, 255);
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for better separation */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.review-box:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.review-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover; /* Ensure image covers the space without distortion */
+}
+
+.review-content {
+    text-align: center;
+}
+
+.review-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1rem; /* Adjust font size as needed */
+}
+
+.review-text {
+    font-size: 0.875rem; /* Adjust font size as needed */
+    color: #555;
+}

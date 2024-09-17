@@ -1,42 +1,45 @@
-// src/components/Sidebar.js
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChartPie, faUsers, faCalendar, faCog } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-router-dom';
-import './Sidebar.css';
+import { faHome, faUserTie, faClock, faCogs, faMoneyCheckAlt, faCalendarAlt, faTools, faEnvelopeOpenText, faSlidersH } from '@fortawesome/free-solid-svg-icons';
+import { NavLink } from 'react-router-dom';
+import './Sidebar.css'; // Ensure the CSS file path is correct
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <div className="sidebar-logo">
-        <img src="logo-placeholder.png" alt="Logo" />
+      {/* Add a logo container here */}
+      <div className="logo-container">
+        <img src="logo.jpeg" alt="Your Logo" />
       </div>
-      <nav className="sidebar-nav">
-        <ul>
-          <li>
-            <Link to="/">
-              <FontAwesomeIcon icon={faChartPie} /> Dashboard
-            </Link>
-          </li>
-          <li>
-            <Link to="/enquiries">
-              <FontAwesomeIcon icon={faUsers} /> Enquiries
-            </Link>
-          </li>
-          <li>
-            <Link to="/schedule">
-              <FontAwesomeIcon icon={faCalendar} /> Schedule
-            </Link>
-          </li>
-          <li>
-            <Link to="/settings">
-              <FontAwesomeIcon icon={faCog} /> Settings
-            </Link>
-          </li>
-        </ul>
-      </nav>
+      <NavLink to="/home" activeClassName="active">
+        <FontAwesomeIcon icon={faHome} className="sidebar-icon" />
+      </NavLink>
+      <NavLink to="/recruitment" activeClassName="active">
+        <FontAwesomeIcon icon={faUserTie} className="sidebar-icon" />
+      </NavLink>
+      <NavLink to="/shift-schedule" activeClassName="active">
+        <FontAwesomeIcon icon={faClock} className="sidebar-icon" />
+      </NavLink>
+      <NavLink to="/sectors" activeClassName="active">
+        <FontAwesomeIcon icon={faCogs} className="sidebar-icon" />
+      </NavLink>
+      <NavLink to="/payroll" activeClassName="active">
+        <FontAwesomeIcon icon={faMoneyCheckAlt} className="sidebar-icon" />
+      </NavLink>
+      <NavLink to="/schedule" activeClassName="active">
+        <FontAwesomeIcon icon={faCalendarAlt} className="sidebar-icon" />
+      </NavLink>
+      <NavLink to="/maintenance" activeClassName="active">
+        <FontAwesomeIcon icon={faTools} className="sidebar-icon" />
+      </NavLink>
+      <NavLink to="/request" activeClassName="active">
+        <FontAwesomeIcon icon={faEnvelopeOpenText} className="sidebar-icon" />
+      </NavLink>
+      <NavLink to="/settings" activeClassName="active">
+        <FontAwesomeIcon icon={faSlidersH} className="sidebar-icon" />
+      </NavLink>
     </div>
   );
-};
+}
 
 export default Sidebar;
