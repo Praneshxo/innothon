@@ -1,50 +1,76 @@
 /* src/components/Header.css */
 .header {
-    position: fixed;
-    top: 0;
-    left: 250px; /* Sidebar width */
-    right: 0;
-    height: 120px;
-    background-color: #ffffff;
-    border-bottom: 3px solid #e0e0e0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    z-index: 1000;
-  }
-  
-  .header-content {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-  .GM{
-    position: absolute;
-    font-size: 16px;
-    margin-top: 40px;
-  }
+  position: fixed;
+  top: 0;
+  left: 250px; /* Sidebar width */
+  right: 0;
+  height: 120px;
+  background-color: #ffffff;
+  border-bottom: 3px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;
+  box-sizing: border-box; /* Ensure padding does not affect width */
+}
 
-  .MP{
-    position: absolute;
-    font-size: 14px;
-    margin-top: 56px;
-  }
-  
-  
-  .user-avatar {
-    position: absolute;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-    margin-top: -3px;
-  }
-  
-  .header-date {
-    font-size: 12px;
-    color: #888;
-    margin-top: 47px;
-    margin-right: 23px;
-  }
-  
+.header-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.user-info {
+  display: flex;
+  align-items: top;
+
+}
+
+.user-avatar {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-left: 19px;
+  margin-top: -9px;
+}
+
+.cn {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-left: -48px;
+}
+
+.GM {
+  font-size: 16px;
+  margin: 0px;
+}
+
+.MP {
+  font-size: 14px;
+  margin-top: 0px;
+}
+
+.header-date {
+  font-size: 12px;
+  color: #888;
+  margin-left: auto;
+  margin-top: 33px; /* Push date to the right */
+}
+
+.header-icons {
+  position: absolute;
+  top: 10px; /* Adjust top position as needed */
+  right: 20px; /* Adjust right position to be visible */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-icon {
+  font-size: 16px;
+  color: rgb(40, 40, 173); /* Adjust color as needed */
+  margin-bottom: 10px; /* Space between icons if more are added */
+}

@@ -8,11 +8,11 @@
 }
 
 .logo-container {
-  margin-top: -20px;
+  margin-top: -16px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px; /* Adjust the height as needed */
+  justify-content: top;
+  align-items: top;
+  height: 90px; /* Adjust the height as needed */
 }
 
 .logo-container img {
@@ -22,10 +22,10 @@
 }
 
 .sidebar a {
-  margin-top: 10px;
-  display: flex;
+  margin-top:-17px;
+
   align-items: center;
-  padding: 5px;
+  padding: 13px;
   text-decoration: none;
   color: rgb(112, 46, 46);
 }
@@ -41,7 +41,21 @@
 
 .sidebar-icon {
   width: 50px;
-  height: 10px;
+  height: 11px;
   font-size: 10px; /* Adjust the size as needed */
   margin-right: 7px; /* Add a small margin for spacing */
+}
+/* ... (existing CSS) ... */
+
+.hover-text {
+  display: none;
+  position: absolute;
+  padding: -10px 20px;
+  color: rgb(15, 15, 15);
+  font-size: 12px;
+  z-index: 1;
+}
+
+.sidebar a:hover .hover-text {
+  display: block;
 }

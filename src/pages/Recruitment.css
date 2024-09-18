@@ -1,0 +1,103 @@
+.recruitment-container {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+}
+
+.title{
+    display: flex;
+    align-items: center; /* Center the paragraph and button vertically */
+    justify-content: space-between; /* Space out the paragraph and button */
+    margin-bottom: 10px; /* Space between header and de container */
+}
+
+.de {
+    width: 30%;
+    height: 90px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column;
+}
+
+.val {
+    display: flex;
+    justify-content: flex-end;
+    color: blue;
+    text-decoration: underline;
+    margin-left: 20px;
+    margin-top: -20px;
+}
+
+.new {
+    cursor: pointer;
+    border: none;
+    width: 16%;
+    height: 30px;
+    background: linear-gradient(to right,#eff5ff,#b6cefa);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: auto; /* Push button to the right */
+    transition: background-position 0.5s ease;
+    background-size: 200% auto;
+}
+.new:hover{
+    font-style: bold;
+    background-position: right center;
+}
+.job{
+    margin-top: 26px;
+    width: 97%;
+    height: 90px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column;
+}
+.ll{
+    margin-top: -18px;
+    display: flex;
+    justify-content: space-between;
+}
+.link{
+    margin-top: 16px;
+    background-color: white;
+    border: none;
+    color: blue;
+    border-radius:12px ;
+    height: 19px;
+}
+.link:hover{
+    cursor: pointer;
+    background-color:rgb(239, 239, 255);
+}
+.list{
+    display: flex;
+    justify-content: space-around;
+}
+.vac{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    text-align: start;
+    border-radius: 12px;
+    width: 14%;
+    height: 20px;
+    background-color: rgb(240, 233, 255);
+    border: #e0d8ff solid 1px;
+    font-size: 14px;
+}
+.ci{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 10px;
+    text-align: center;
+}
