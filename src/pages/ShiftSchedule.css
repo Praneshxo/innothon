@@ -1,31 +1,94 @@
-.oreport{
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    height: 80px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    padding: 15px; /* Reduced padding */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
-}
-.link{
-    font-size: 10px;
-}
-.vac-ShiftSchedule{
-    margin-top: -12px;
-    border-radius: 12px;
-    width: 100px;
-    align-items: center;
-    padding: 2px;
-    font-size: 10px;
-    display: flex;
-    justify-content: space-around;
-    background-color: rgb(192, 214, 255);
-}
-.vacc{
-    margin-bottom: 20px;
-    align-items: center;
-    text-align: center;
+.shift-schedule-container {
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .shift-header {
     display: flex;
     justify-content: space-between;
-}
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .overall {
+    display: flex;
+    gap: 10px;
+  }
+  .ssov{
+    background-color: aqua;
+  }
+  
+  .view-report {
+    background-color: #eff3ff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .shift-types {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .shift-types button {
+    background-color: #eff3ff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .overtime, .swap, .add-btn {
+    background-color: #ede9ff;
+  }
+  
+  .sectors {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  
+  .sectors button {
+    background-color: #f0f4f8;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .shift-info {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  
+  .shift-info button {
+    background-color: #eff3ff;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .shift-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+  }
+  
+  .shift-table th, .shift-table td {
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .shift-table th {
+    background-color: #f0f4f8;
+  }
+  
+  .shift-table tbody tr:hover {
+    background-color: #f9f9f9;
+  }
+  
