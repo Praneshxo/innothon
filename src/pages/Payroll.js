@@ -1,5 +1,6 @@
 import React from 'react';
 import './Payroll.css'; // Importing CSS for styling
+import './Payroll.css'; // Importing CSS for styling
 
 const Payroll = () => {
   return (
@@ -24,7 +25,7 @@ const Payroll = () => {
           </div>
         </div>
 
-        {/* Revenue Report and Payment Summary Section */}
+        {/* Revenue Report Section */}
         <div className="jilo">
           <div className="report-container">
             <div className="report-top">
