@@ -17,7 +17,7 @@ const ToDoList = () => {
 
   useEffect(() => {
     // Fetch existing tasks from the backend
-    axios.get('/api/tasks')
+    axios.get('http://localhost:8000/to_do/')
       .then((response) => {
         setTasks(response.data);
       })
@@ -39,7 +39,7 @@ const ToDoList = () => {
 
   const handleAddTask = async () => {
     try {
-      const response = await axios.post('/api/tasks', taskDetails);
+      const response = await axios.post('http://localhost:8000/to-do/', taskDetails);
       setTasks([...tasks, response.data]);
       setModalOpen(false);
       setTaskDetails({
@@ -54,13 +54,17 @@ const ToDoList = () => {
     }
   };
 
-  const toggleTask = (index) => {
+  const toggleTask = async (index) => {
     const updatedTasks = [...tasks];
-    updatedTasks[index].done = !updatedTasks[index].done;
+    const task = updatedTasks[index];
+    task.done = !task.done;
 
+    // Update the backend if necessary
+    await axios.put(`http://localhost:8000/to-do/${task.id}`, task);
+    
     setTasks(updatedTasks);
 
-    if (updatedTasks[index].done) {
+    if (task.done) {
       setTimeout(() => {
         setTasks((prev) => prev.filter((_, i) => i !== index));
       }, 1000); // Adjust time as needed
@@ -78,7 +82,7 @@ const ToDoList = () => {
 
       <div className="todo-items">
         {tasks.map((task, index) => (
-          <div key={index} className={`todo-item ${task.done ? 'fade-out' : ''}`}>
+          <div key={task.id} className={`todo-item ${task.done ? 'fade-out' : ''}`}>
             <input
               type="checkbox"
               checked={task.done}

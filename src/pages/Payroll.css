@@ -1,0 +1,124 @@
+.payroll {
+    padding: 10px;
+    background-color: #f4f4f4;
+  }
+  
+  .upcoming-payments {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .upcoming-payments h2 {
+    margin-bottom: 15px;
+  }
+  
+  .payments-list .payment-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .description {
+    font-weight: bold;
+  }
+  
+  .due-date {
+    color: red;
+  }
+  
+  .proceed-button {
+    background-color: #3399FF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  
+  .report-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .report-section h2 {
+    margin-bottom: 15px;
+  }
+  
+  .report-details, .payment-summary {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .report-item, .summary-item {
+    width: 30%;
+    padding: 10px;
+  }
+  
+  .quick-actions {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .create-payroll, .bonus, .view-reports {
+    background-color: #3399FF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  
+  .payment-history {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .payment-history table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .payment-history th, .payment-history td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .paid {
+    color: green;
+  }
+  
+  .pending {
+    color: orange;
+  }
+  
+  .view-data {
+    background-color: transparent;
+    color: #3399FF;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .export-button {
+    background-color: #3399FF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .phmain{
+    display: flex;
+  }
+  .jilo{
+    margin-left: 120px;
+    display: flex;
+    background-color: aqua;
+  }

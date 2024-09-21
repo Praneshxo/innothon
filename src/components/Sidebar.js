@@ -9,7 +9,7 @@ const Sidebar = () => {
     <div className="sidebar">
       {/* Add a logo container here */}
       <div className="logo-container">
-        <img src="logo.jpeg" alt="Your Logo" />
+        <img src="logo.webp" alt="Your Logo" />
       </div>
       <NavLink to="/home" activeClassName="active">
         <FontAwesomeIcon icon={faHome} className="sidebar-icon" />

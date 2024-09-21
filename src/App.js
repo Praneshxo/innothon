@@ -21,6 +21,7 @@ const App = () => {
         <div className="main-content">
         <Header />
         <div className="page-content">
+          
           <Routes>
             <Route path="/home" element={<Home />} />
             <Route path="/recruitment" element={<Recruitment />} />

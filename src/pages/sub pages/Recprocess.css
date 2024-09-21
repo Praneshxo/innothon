@@ -33,6 +33,7 @@
 }
 
 .recard {
+    display: flex;
     background-color: #e7f3ff; /* Light blue for cards */
     padding: 10px;
     margin: 10px 0;

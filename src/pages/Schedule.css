@@ -1,0 +1,150 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Container for the page */
+  .schedule-page {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header row containing tabs and calendar icon */
+  .header-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Tabs and calendar icon on the same side */
+  .tabs-and-icon {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Tab button styling with fixed width */
+  .tab-button {
+    background-color: #f0f0f0;
+    border: none;
+    width: 100px; /* Fixed width of 100px */
+    padding: 10px;
+    margin-right: 10px; /* Space between buttons */
+    font-size: 16px;
+    cursor: pointer;
+    color: #555;
+    text-align: center; /* Centers the text inside */
+    transition: background-color 0.3s ease;
+  }
+  
+  .tab-button.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .tab-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Calendar icon styling */
+  .calendar-icon {
+    font-size: 24px;
+    color: #000000;
+  }
+  
+  .calendar-icon i {
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .calendar-icon i:hover {
+    color: #6fb5ff;
+  }
+  
+  /* Table styling */
+  .schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .schedule-table th,
+  .schedule-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .schedule-table thead {
+    background-color: #e0e0e0;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .schedule-table tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .schedule-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* View Button styling */
+  .view-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .view-button i {
+    margin-right: 5px;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .schedule-page {
+      padding: 10px;
+    }
+  
+    .schedule-table th,
+    .schedule-table td {
+      padding: 8px;
+      font-size: 14px;
+    }
+  
+    h2 {
+      font-size: 18px;
+    }
+  
+    .tab-button {
+      padding: 8px 10px;
+      width: 90px; /* Adjust width for smaller screens */
+      font-size: 14px;
+    }
+  
+    .calendar-icon {
+      font-size: 20px;
+    }
+  }
+  
