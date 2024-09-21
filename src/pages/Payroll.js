@@ -1,5 +1,6 @@
 import React from 'react';
 import './Payroll.css'; // Importing CSS for styling
+import './Payroll.css'; // Importing CSS for styling
 
 const Payroll = () => {
   return (
