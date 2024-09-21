@@ -1,124 +1,162 @@
-.payroll {
-    padding: 10px;
-    background-color: #f4f4f4;
-  }
-  
-  .upcoming-payments {
-    background-color: white;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .upcoming-payments h2 {
-    margin-bottom: 15px;
-  }
-  
-  .payments-list .payment-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .description {
-    font-weight: bold;
-  }
-  
-  .due-date {
-    color: red;
-  }
-  
-  .proceed-button {
-    background-color: #3399FF;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-  }
-  
-  .report-section {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-  }
-  
-  .report-section h2 {
-    margin-bottom: 15px;
-  }
-  
-  .report-details, .payment-summary {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .report-item, .summary-item {
-    width: 30%;
-    padding: 10px;
-  }
-  
-  .quick-actions {
-    margin-bottom: 20px;
-    display: flex;
-    gap: 10px;
-  }
-  
-  .create-payroll, .bonus, .view-reports {
-    background-color: #3399FF;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-  }
-  
-  .payment-history {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-  }
-  
-  .payment-history table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-  }
-  
-  .payment-history th, .payment-history td {
-    padding: 10px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .paid {
-    color: green;
-  }
-  
-  .pending {
-    color: orange;
-  }
-  
-  .view-data {
-    background-color: transparent;
-    color: #3399FF;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .export-button {
-    background-color: #3399FF;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  .phmain{
-    display: flex;
-  }
-  .jilo{
-    margin-left: 120px;
-    display: flex;
-    background-color: aqua;
-  }
+.main-content {
+  padding: 20px;
+}
+
+.phmain {
+  display: flex;
+}
+
+.upcoming-payments {
+  width: 40%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.payments-list {
+  margin-top: 10px;
+}
+
+.payment-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f4f4f4;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.description {
+  font-weight: bold;
+}
+
+.due-date {
+  color: red;
+  font-weight: bold;
+}
+
+.proceed-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.proceed-button:hover {
+  background-color: #0056b3;
+}
+
+.jilo {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(182, 209, 231);
+  border-radius: 8px;
+  padding: 20px;
+  margin-left: 20px;
+  width: 50%;
+}
+
+.report-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.report-top {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.report-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.report-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #e9f0f7;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.payment-summary {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #e9f0f7;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.quick-actions {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.create-payroll, .bonus, .view-reports {
+  background-color: #3399FF;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.payment-history {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.payment-history table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.payment-history th, .payment-history td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.paid {
+  color: green;
+}
+
+.pending {
+  color: orange;
+}
+
+.view-data {
+  background-color: transparent;
+  color: #3399FF;
+  border: none;
+  cursor: pointer;
+}
+
+.export-button {
+  background-color: #3399FF;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}

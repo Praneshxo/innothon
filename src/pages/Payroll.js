@@ -24,7 +24,7 @@ const Payroll = () => {
           </div>
         </div>
 
-        {/* Revenue Report Section */}
+        {/* Revenue Report and Payment Summary Section */}
         <div className="jilo">
           <div className="report-container">
             <div className="report-top">
