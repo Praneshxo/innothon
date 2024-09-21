@@ -29,16 +29,29 @@ const writeTasksToFile = (tasks) => {
   fs.writeFileSync(tasksFilePath, JSON.stringify(tasks, null, 2));
 };
 
-// Routes
+// Get all tasks
 app.get('/api/tasks', (req, res) => {
   const tasks = readTasksFromFile();
   res.json(tasks);
 });
 
+// Add a new task
 app.post('/api/tasks', (req, res) => {
-  const newTasks = req.body;
-  writeTasksToFile(newTasks);
-  res.status(200).send('Tasks updated successfully');
+  const tasks = readTasksFromFile(); // Get existing tasks
+  const newTask = req.body; // The new task from request
+  newTask.id = Math.random(); // Generate a random ID for the new task
+  tasks.push(newTask); // Add new task to the task list
+  writeTasksToFile(tasks); // Save updated task list
+  res.status(201).json(newTask); // Respond with the new task
+});
+
+// Delete a task by ID
+app.delete('/api/tasks/:id', (req, res) => {
+  const tasks = readTasksFromFile(); // Get existing tasks
+  const taskId = parseFloat(req.params.id); // Parse the task ID from the URL
+  const updatedTasks = tasks.filter(task => task.id !== taskId); // Filter out the task to be deleted
+  writeTasksToFile(updatedTasks); // Save the updated task list
+  res.status(200).send(); // Respond with success
 });
 
 // Start the server

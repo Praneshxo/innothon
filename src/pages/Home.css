@@ -205,7 +205,7 @@
   
   .icon-button {
     pointer-events: all;
-    background: none;
+    background-color:#7ba9e0 ;
     border: none;
     cursor: pointer;
   }

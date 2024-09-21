@@ -1,0 +1,50 @@
+/* Chatbot.css */
+
+.chatbot-container {
+    max-width: 400px; /* Set a maximum width for the chatbot */
+    margin: 20px auto; /* Center the chatbot */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #fff; /* White background */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+}
+
+.messages {
+    padding: 10px; /* Padding inside the message area */
+    overflow-y: auto; /* Allow scrolling if messages overflow */
+    flex-grow: 1; /* Take up available space */
+    max-height: 300px; /* Limit height of messages area */
+}
+
+.user {
+    text-align: right; /* Align user messages to the right */
+    margin: 5px; /* Margin around user messages */
+}
+
+.bot {
+    text-align: left; /* Align bot messages to the left */
+    margin: 5px; /* Margin around bot messages */
+}
+
+input[type="text"] {
+    padding: 10px; /* Padding for input field */
+    border: none; /* Remove default border */
+    border-top: 1px solid #ccc; /* Top border for input field */
+    border-radius: 0 0 10px 10px; /* Rounded corners at bottom */
+    width: calc(100% - 22px); /* Full width minus padding/border */
+}
+
+button {
+    padding: 10px; /* Padding for button */
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

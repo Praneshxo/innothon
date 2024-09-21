@@ -1,9 +1,10 @@
 // src/components/Header.js
-import React from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons'; // Import only needed icons
+import { faSearch } from '@fortawesome/free-solid-svg-icons'; 
 import { NavLink } from 'react-router-dom';
 import './Header.css';
+import Chatbot from '../pages/Chatbot';
 
 const Header = () => {
   const currentDate = new Date().toLocaleDateString('en-US', {
@@ -12,6 +13,12 @@ const Header = () => {
     month: 'long',
     day: 'numeric',
   });
+
+  const [isChatbotOpen, setChatbotOpen] = useState(false);
+
+  const toggleChatbot = () => {
+    setChatbotOpen(!isChatbotOpen);
+  };
 
   return (
     <header className="header">
@@ -28,12 +35,25 @@ const Header = () => {
           <NavLink to="/home" activeClassName="active">
             <FontAwesomeIcon icon={faSearch} className="search-icon" />
           </NavLink>
+          <button onClick={toggleChatbot} className="chatbot-icon">
+            {/* Replace with your preferred chatbot icon */}
+            🤖
+          </button>
         </div>
 
         <div className="header-date">
           <p>{currentDate}</p>
         </div>
       </div>
+
+      {isChatbotOpen && (
+        <div className="chatbot-modal">
+          <div className="chatbot-content">
+            <button onClick={toggleChatbot} className="close-button">X</button>
+            <Chatbot />
+          </div>
+        </div>
+      )}
     </header>
   );
 };
